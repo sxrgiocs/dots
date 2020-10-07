@@ -1,0 +1,2 @@
+rofi.theme: /home/sergio/.config/rofi/themes/mine
+rofi.drun-display-format: {name}

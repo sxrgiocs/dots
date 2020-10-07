@@ -1,0 +1,9 @@
+#set default-bg "#07080d"
+
+set recolor                     "true"
+set recolor-reverse-video       "true"
+set recolor-keephue             "true"
+
+set recolor true
+set recolor-darkcolor "#ffffff" # this is white
+set recolor-lightcolor "#07080d" #this is dark blue
