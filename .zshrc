@@ -9,6 +9,10 @@
 #Fix the Java problem
 export _JAVA_AWT_WM_NONPARENTING=1
 
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/bin/python
+PYTHONPATH=/usr/lib/python38.zip:/usr/lib/python3.8:/usr/lib/python3.8/lib-dynload:/home/sergio/.local/lib/python3.8/site-packages:/usr/lib/python3.8/site-packages
+PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig:/home/sergio/Programs/Ipopt
+
 export VISUAL=nvim
 export EDITOR=nvim
 
@@ -26,7 +30,7 @@ zstyle :compinstall filename '/home/sergio/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /home/sergio/Programs/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -84,8 +88,7 @@ alias pipes.sh='export LC_ALL="en_US.UTF-8" && pipes.sh'
 
 # Backup config files
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-alias config_all='config add /home/sergio/.config/ufetch /home/sergio/.config/alacritty/alacritty.yml /home/sergio/.config/bspwm /home/sergio/.config/dunst /home/sergio/.config/picom /home/sergio/.config/autorandr /home/sergio/.config/ranger /home/sergio/.config/rofi /home/sergio/.config/sxhkd /home/sergio/.config/spicetify /home/sergio/.config/polybar /home/sergio/.p10k.zsh /home/sergio/.xinitrc /home/sergio/.zshrc /home/sergio/.nanorc'
-
+alias confall='config add /home/sergio/.nanorc /home/sergio/.p10k.zsh /home/sergio/.vimrc /home/sergio/.xinitrc /home/sergio/.zshrc /home/sergio/.config/alacritty /home/sergio/.config/autorandr /home/sergio/.config/bspwm /home/sergio/.config/dunst /home/sergio/.config/gtk-2.0 /home/sergio/.config/gtk-3.0 /home/sergio/.config/nvim /home/sergio/.config/picom /home/sergio/.config/polybar /home/sergio/.config/ranger /home/sergio/.config/rofi /home/sergio/.config/spicetify /home/sergio/.config/sxhkd /home/sergio/.config/zathura /home/sergio/.config/firefoxcss.sh /home/sergio/.config/ufetch-arch'
 alias conn="notify-send 'Connected to:' '$(nmcli | awk '/^wlp2s0/ {print $4}')'"
 
 # Pacman and yay
@@ -117,7 +120,8 @@ alias jn='jupyter notebook'
 
 # Ranger
 alias media='ranger /run/media'
-
+alias conf='ranger /home/sergio/.config'
+alias uni='ranger /home/sergio/Documents/bioeng'
 # Git Configs
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
@@ -167,6 +171,6 @@ ex ()
   fi
 }
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/sergio/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/sergio/Programs/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
