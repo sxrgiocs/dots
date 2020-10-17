@@ -7,7 +7,6 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
@@ -19,15 +18,27 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Ranger File Manager
     Plug 'francoiscabrol/ranger.vim'
     Plug 'rbgrouleff/bclose.vim'
-    " Intellisense. Use release branch (recommend)
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Buffer for lightline
     Plug 'taohexxx/lightline-buffer'
     " Devicons
     Plug 'ryanoasis/vim-devicons'
-    " Latex Live Preview
+    " Latex 
     Plug 'xuhdev/vim-latex-live-preview' 
+    Plug 'lervag/vimtex'
+    " Ultisnips
+    Plug 'SirVer/ultisnips' 
+    Plug 'honza/vim-snippets'
+    " Autocomplete
+    Plug 'ycm-core/YouCompleteMe' 
     " LanguageTool
     Plug 'dpelle/vim-LanguageTool'
-
-call plug#end()
+    " Markdown Preview
+    Plug 'conornewton/vim-pandoc-markdown-preview' 
+    " Markdown TOC
+    Plug 'mzlogin/vim-markdown-toc'
+    " R Markdown
+    Plug 'vim-pandoc/vim-rmarkdown'
+    " Pandoc
+"    Plug 'vim-pandoc/vim-pandoc'
+"    Plug 'vim-pandoc/vim-pandoc-syntax'
+    call plug#end()

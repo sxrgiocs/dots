@@ -196,9 +196,12 @@ XF86MonBrightnessUp
 super + shift + c
 	pcmanfm 
 
-#launch brave
+#launch firefox
 super + shift + b
     firefox
+
+super + shift + m
+	firefox --private-window
 
 #launch spotify
 super + shift + s

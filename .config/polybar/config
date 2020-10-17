@@ -11,6 +11,7 @@ white = #ffffff
 orange = #ffb86c
 lime = #a2ff73
 purple = #bd93f9
+gray = #abc5db
 
 background = #060F1A
 foreground = #dfdfdf
@@ -50,7 +51,7 @@ type = internal/bspwm
 label-separator = "%{T4}  %{T-}"
 
 label-focused = %name%
-label-focused-background = ${colors.white}
+label-focused-background = ${colors.gray}
 label-focused-foreground = ${colors.background}
 label-focused-padding = 1
 
@@ -89,6 +90,7 @@ format-charging = <label-charging>
 format-discharging = <label-discharging>
 label-discharging = "  %percentage%% "
 label-charging = "  %percentage%% "
+label-full = "  Full "
 label-discharging-background = ${colors.purple}
 label-charging-foreground = ${colors.background}
 label-charging-background = ${colors.purple}
@@ -110,11 +112,11 @@ label-disconnected-background = ${colors.black}
 type = internal/date
 interval = 1
 
-date = 
-date-alt = "| %d-%m-%Y "
+#date = 
+date = "| %d-%m-%Y "
 
-time = "  %H:%M"
-time-alt = "  %H:%M:%S"
+#time = "  %H:%M"
+time = "  %H:%M"
 
 format-prefix = 
 format-prefix-foreground = ${colors.background}
