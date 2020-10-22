@@ -24,20 +24,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
     " Latex 
     Plug 'xuhdev/vim-latex-live-preview' 
-    Plug 'lervag/vimtex'
+    "Plug 'lervag/vimtex'
     " Ultisnips
-    Plug 'SirVer/ultisnips' 
-    Plug 'honza/vim-snippets'
+    "Plug 'SirVer/ultisnips' 
+    "Plug 'honza/vim-snippets'
     " Autocomplete
     Plug 'ycm-core/YouCompleteMe' 
     " LanguageTool
     Plug 'dpelle/vim-LanguageTool'
     " Markdown Preview
-    Plug 'conornewton/vim-pandoc-markdown-preview' 
+    Plug 'conornewton/vim-pandoc-markdown-preview', {'for': 'markdown'} 
     " Markdown TOC
-    Plug 'mzlogin/vim-markdown-toc'
+    Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'}
     " R Markdown
-    Plug 'vim-pandoc/vim-rmarkdown'
+    Plug 'vim-pandoc/vim-rmarkdown', {'for': ['markdown', 'rmarkdown']}
     " Pandoc
 "    Plug 'vim-pandoc/vim-pandoc'
 "    Plug 'vim-pandoc/vim-pandoc-syntax'

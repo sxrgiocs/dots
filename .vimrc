@@ -16,12 +16,15 @@ let mapleader = " "
 nnoremap <C-Left> :bprev<CR>
 nnoremap <C-Right> :bnext<CR>
 
-" Make double-<Esc> clear search highlights
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+" Write and quit
+nnoremap <Leader>w :wq<CR>
 
-map  <F12> :set hls!<CR>
-imap <F12> <ESC>:set hls!<CR>a
-vmap <F12> <ESC>:set hls!<CR>gv
+" Quit without saving
+nnoremap <Leader>q :q!<CR>
+
+map  <F1> :set hls!<CR>
+imap <F1> <ESC>:set hls!<CR>a
+vmap <F1> <ESC>:set hls!<CR>gv
 
 " Copy and paste
 noremap <Leader>y "*y
@@ -38,6 +41,10 @@ noremap <C-A> ggVG
 
 " Compile RMarkdown
 autocmd Filetype rmd map <F11> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+
+" End and beginning of the line
+nnoremap <A-Right> $
+nnoremap <A-Left> 0
 "#######################################################################
 "#                       S E T S  &  L E T S                           #
 "#######################################################################

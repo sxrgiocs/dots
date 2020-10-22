@@ -77,9 +77,9 @@ format-volume = <label-volume>
 format-muted = <label-muted>
 label-muted = "  Muted "
 label-volume = "  %percentage%% "
-format-volume-background = ${colors.purple}
+format-volume-background = ${colors.blue}
 format-volume-foreground = ${colors.background}
-format-muted-background = ${colors.purple}
+format-muted-background = ${colors.blue}
 format-muted-foreground = ${colors.background}
 
 [module/bat]
@@ -91,20 +91,20 @@ format-discharging = <label-discharging>
 label-discharging = "  %percentage%% "
 label-charging = "  %percentage%% "
 label-full = "  Full "
-label-discharging-background = ${colors.purple}
+label-discharging-background = ${colors.blue}
 label-charging-foreground = ${colors.background}
-label-charging-background = ${colors.purple}
+label-charging-background = ${colors.blue}
 label-discharging-foreground = ${colors.background}
-label-full-background = ${colors.purple}
-label-full-foreground = ${colors.green}
+label-full-background = ${colors.blue}
+label-full-foreground = ${colors.background}
 
 [module/network]
 type = internal/network
 interface = wlan0
-label-disconnected = " 睊 No Connection "
+label-disconnected = " No Connection "
 label-connected = "  %essid% "
 label-connected-foreground = ${colors.background}
-label-connected-background = ${colors.magenta}
+label-connected-background = ${colors.purple}
 label-disconnected-foreground = ${colors.background}
 label-disconnected-background = ${colors.black}
 
@@ -121,7 +121,7 @@ time = "  %H:%M"
 format-prefix = 
 format-prefix-foreground = ${colors.background}
 format-foreground = ${colors.background}
-format-background = ${colors.red}
+format-background = ${colors.magenta}
 
 label = %time% %date%
 
@@ -135,19 +135,19 @@ format-warn = <label-warn>
 label = "  %temperature-c% "
 label-warn = "  %temperature-c% "
 label-warn-foreground = ${colors.red}
-label-warn-background = ${colors.blue}
+label-warn-background = ${colors.lime}
 label-foreground = ${colors.background}
-label-background = ${colors.blue}
+label-background = ${colors.lime}
 
 [module/backlight]
 type = internal/backlight
 format = <ramp>
 label = "  "
 label-foreground = ${colors.background}
-label-background = ${colors.purple}
+label-background = ${colors.blue}
 
 ramp-foreground = ${colors.background}
-ramp-background = ${colors.purple}
+ramp-background = ${colors.blue}
 
 ramp-0 = "  0% "
 ramp-1 = "  10% "
@@ -172,7 +172,7 @@ interval = 2
 
 label = "  %percentage_used%% " 
 label-foreground = ${colors.background}
-label-background = ${colors.blue}
+label-background = ${colors.lime}
 
 [module/filesystem]
 type = internal/fs
@@ -183,9 +183,9 @@ mount-0 = /
 label-mounted = "  %free% " 
 label-unmounted =  %mountpoint% not mounted ‎ ‎ ‎ 
 label-mounted-foreground = ${colors.background}
-label-mounted-background = ${colors.blue}
+label-mounted-background = ${colors.lime}
 label-unmounted-foreground = ${colors.background}
-label-unmounted-background = ${colors.blue}
+label-unmounted-background = ${colors.lime}
 
 [module/spotify]
 type = custom/script

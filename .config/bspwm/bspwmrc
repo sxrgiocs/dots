@@ -6,15 +6,15 @@ sxhkd &
 #                            M O N I T O R S                           #
 ########################################################################
 
-xrandr --output HDMI-1 --primary --right-of eDP-1 --size 1600x900 &
+xrandr --output HDMI-1 --primary --left-of eDP-1 --size 1920x1080 &
 
 bspc subscribe monitor | while read -r line; do
   case $line in
       monitor_add*|monitor_geometry*)
 	if [[ "$(xrandr | grep -w "HDMI-1 connected")" == *"HDMI-1 connected"* ]] 
 	then          
-		bspc monitor HDMI-1 -d " 4" " 5" " 6" " 7" " 8" " 9" " 0"
-          	bspc monitor eDP-1 -d " 1" " 2" " 3"
+		bspc monitor HDMI-1 -d " 1" " 2" " 3" " 4" " 5" " 6" " 7"
+       	bspc monitor eDP-1 -d " 8" " 9" " 0"
         
 	elif [[ "$(xrandr | grep -w "DP-1 connected"  )" == *"DP-1 connected"* ]] 
         then
@@ -30,9 +30,6 @@ bspc subscribe monitor | while read -r line; do
 done &
 
 #bspc wm --adopt-orphans
-
-bspc config remove_disabled_monitors    true
-bspc config remove_unplugged_monitors   true
 
 ########################################################################
 #                           A U T O S T A R T                          #
