@@ -1,0 +1,25 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "markdown",
+        "javascript",
+        "graphql",
+        "html",
+        "yaml",
+        "json",
+        "python",
+        "rmarkdown"
+    ],
+    // python config
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    // markdown
+    "markdownlint.onOpen": true,
+    "markdownlint.onSave": true,
+    "markdownlint.onChange": true,
+    "markdownlint.config": {},
+    "snippets.ultisnips.directories": [
+        "UltiSnips",
+        "~/.config/nvim/utils/snips"
+    ]
+}

@@ -135,9 +135,9 @@ format-warn = <label-warn>
 label = "  %temperature-c% "
 label-warn = "  %temperature-c% "
 label-warn-foreground = ${colors.red}
-label-warn-background = ${colors.lime}
+label-warn-background = ${colors.green}
 label-foreground = ${colors.background}
-label-background = ${colors.lime}
+label-background = ${colors.green}
 
 [module/backlight]
 type = internal/backlight
@@ -172,7 +172,7 @@ interval = 2
 
 label = "  %percentage_used%% " 
 label-foreground = ${colors.background}
-label-background = ${colors.lime}
+label-background = ${colors.green}
 
 [module/filesystem]
 type = internal/fs
@@ -183,9 +183,9 @@ mount-0 = /
 label-mounted = "  %free% " 
 label-unmounted =  %mountpoint% not mounted ‎ ‎ ‎ 
 label-mounted-foreground = ${colors.background}
-label-mounted-background = ${colors.lime}
+label-mounted-background = ${colors.green}
 label-unmounted-foreground = ${colors.background}
-label-unmounted-background = ${colors.lime}
+label-unmounted-background = ${colors.green}
 
 [module/spotify]
 type = custom/script
@@ -196,11 +196,11 @@ click-left = playerctl play-pause spotify
 scroll-up = playerctl next spotify
 scroll-down = playerctl previous spotify
 
-label-background = ${colors.green}
+label-background = ${colors.lime}
 label-foreground = ${colors.background}
 
 format-prefix = "  "
 
 format-prefix-foreground = ${colors.background}
-format-prefix-background = ${colors.green}
+format-prefix-background = ${colors.lime}
 

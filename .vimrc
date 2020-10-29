@@ -1,10 +1,11 @@
-colorscheme pablo
+color pablo-mod
 
 "########################################################################
 "#                       S O U R C E  F I L E S                         #
 "########################################################################
 
-source $HOME/.config/nvim/vim-plug/plugins.vim
+source ~/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plug-config/coc.vim
 
 "########################################################################
 "#                             R E M A P S                              #
@@ -13,8 +14,8 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 let mapleader = " "
 
 " Change Buffer
-nnoremap <C-Left> :bprev<CR>
-nnoremap <C-Right> :bnext<CR>
+nnoremap <C-H> :bprev<CR>
+nnoremap <C-L> :bnext<CR>
 
 " Write and quit
 nnoremap <Leader>w :wq<CR>
@@ -36,15 +37,9 @@ noremap <Leader>Y "+y
 noremap <Leader>l :LLPStartPreview<CR>
 noremap <Leader>mp :StartMdPreview<CR>
 
-" Select everything
-noremap <C-A> ggVG
-
 " Compile RMarkdown
-autocmd Filetype rmd map <F11> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+autocmd Filetype rmd map <leader>m :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
-" End and beginning of the line
-nnoremap <A-Right> $
-nnoremap <A-Left> 0
 "#######################################################################
 "#                       S E T S  &  L E T S                           #
 "#######################################################################
@@ -58,7 +53,10 @@ autocmd BufRead,BufNewFile *.tex setlocal spell
 set clipboard=unnamedplus
 
 set signcolumn=no
-set number
+
+" Numbering
+set number relativenumber 
+
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -71,24 +69,26 @@ set incsearch
 
 set encoding=UTF-8
 
+" PDF previews
 let g:livepreview_previewer = 'zathura'
 let g:md_pdf_viewer='zathura'
 
+" LanguageTools
 let g:languagetool_jar='/home/sergio/Programs/LanguageTool-5.1/languagetool-commandline.jar'
 let g:languagetool_lang='en-US'
 
 " UltiSnips
-let g:SuperTabDefaultCompletionType    = '<C-n>'
-let g:SuperTabCrMapping                = 0
-let g:UltiSnipsExpandTrigger           = '<tab>'
-let g:UltiSnipsJumpForwardTrigger      = '<c-b>'
-let g:UltiSnipsJumpBackwardTrigger     = '<c-z>'
-let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
-let g:UltiSnipsSnippetDirectories = ['/home/sergio/.config/nvim/UltiSnips']
+"let g:SuperTabDefaultCompletionType    = '<C-n>'
+"let g:SuperTabCrMapping                = 0
+"let g:UltiSnipsExpandTrigger           = '<tab>'
+"let g:UltiSnipsJumpForwardTrigger      = '<c-b>'
+"let g:UltiSnipsJumpBackwardTrigger     = '<c-z>'
+"let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
+"let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+"let g:UltiSnipsSnippetDirectories = ['/home/sergio/.config/nvim/UltiSnips']
 
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsListSnippets="<c-t>"
+"let g:UltiSnipsEditSplit="vertical"
+"let g:UltiSnipsListSnippets="<c-t>"
 
 " VimTeX
 let g:tex_flavor = 'latex'

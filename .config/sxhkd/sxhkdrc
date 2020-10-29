@@ -51,7 +51,6 @@ super + g
 	bspc node -s biggest
 
 
-
 ########################################################################
 #                          S T A T E / F L A G S                       #
 ########################################################################
@@ -65,13 +64,15 @@ super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
 
-
 ########################################################################
 #                        F O C U S / S W A P                           #
 ########################################################################
 
 # focus the node in the given direction
-super + {_,shift + }{Left, Down, Up, Right}
+#super + {_,shift + }{Left, Down, Up, Right}
+#	bspc node -{f,s} {west,south,north,east}
+
+super + {_,shift + }{h, j, k, l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
@@ -83,7 +84,10 @@ super + c
 	bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
-super + ctrl + {Left, Right}
+#super + ctrl + {Left, Right}
+#	bspc desktop -f {prev,next}.occupied.local
+
+super + ctrl + {j,k}
 	bspc desktop -f {prev,next}.occupied.local
 
 # focus the last node/desktop
@@ -104,14 +108,12 @@ super + {_,shift + }{1-9,0}
 super + {_,shift + }{Left, Right}
         bspc {desktop -f,node -d} '^{prev,next}'
 
-
-
 ########################################################################
 #                           P R E S E L E C T                          #
 ########################################################################
 
 # preselect the direction
-super + ctrl + alt + {Left, Down, Up, Right}
+super + ctrl + alt + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
@@ -150,7 +152,7 @@ super + alt + {Left,Down,Up,Right}
 #######################################################################
 
 #custom resize
-ctrl + alt + {Left, Down, Up, Right}
+ctrl + alt + {h,j,k,l}
 	/home/sergio/.config/bspwm/scripts/bspwm_resize {west, south, north, east}
 
 #change keyboard layout
@@ -160,6 +162,8 @@ super + n
 super + alt + n
 	setxkbmap -rules evdev -model evdev -layout us 
 
+super + alt + e
+	setxkbmap -rules evdev -model evdev -layout es
 
 ########################################################################
 #                       F U N C T I O N  K E Y S                       #

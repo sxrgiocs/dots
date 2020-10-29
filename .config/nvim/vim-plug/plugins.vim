@@ -29,7 +29,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'SirVer/ultisnips' 
     "Plug 'honza/vim-snippets'
     " Autocomplete
-    Plug 'ycm-core/YouCompleteMe' 
+    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
     " LanguageTool
     Plug 'dpelle/vim-LanguageTool'
     " Markdown Preview
