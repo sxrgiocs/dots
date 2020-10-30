@@ -38,16 +38,21 @@ noremap <Leader>l :LLPStartPreview<CR>
 noremap <Leader>mp :StartMdPreview<CR>
 
 " Compile RMarkdown
-autocmd Filetype rmd map <leader>m :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+autocmd Filetype rmd map <leader>= :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 "#######################################################################
 "#                       S E T S  &  L E T S                           #
 "#######################################################################
 
+" Set spelling check
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.rmd setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd BufRead,BufNewFile *.tex setlocal spell
+
+" Set linewidth for certain files
+autocmd BufRead,BufNewFile *.rmd setlocal textwidth=120
+autocmd BufRead,BufNewFile *.py setlocal textwidth=80
 
 " Give access to clipboard
 set clipboard=unnamedplus
