@@ -41,4 +41,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Pandoc
 "    Plug 'vim-pandoc/vim-pandoc'
 "    Plug 'vim-pandoc/vim-pandoc-syntax'
+    " Tables
+    Plug 'dhruvasagar/vim-table-mode'
     call plug#end()

@@ -30,7 +30,7 @@
         "sysPrefix": "/usr",
         "fileHash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c"
       },
-      "expiry": 1604073857657
+      "expiry": 1604223565533
     },
     "/sbin/python2.v3": {
       "data": {
@@ -55,7 +55,7 @@
         "sysPrefix": "/usr",
         "fileHash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c"
       },
-      "expiry": 1604073857658
+      "expiry": 1604223565534
     },
     "/sbin/python.v3": {
       "data": {
@@ -80,7 +80,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857663
+      "expiry": 1604223565536
     },
     "/usr/sbin/python3.8.v3": {
       "data": {
@@ -105,7 +105,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857664
+      "expiry": 1604223565537
     },
     "/usr/sbin/python3.v3": {
       "data": {
@@ -130,7 +130,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857665
+      "expiry": 1604223565539
     },
     "/usr/sbin/python2.7.v3": {
       "data": {
@@ -155,7 +155,7 @@
         "sysPrefix": "/usr",
         "fileHash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c"
       },
-      "expiry": 1604073857666
+      "expiry": 1604223565540
     },
     "/usr/sbin/python2.v3": {
       "data": {
@@ -180,7 +180,7 @@
         "sysPrefix": "/usr",
         "fileHash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c"
       },
-      "expiry": 1604073857667
+      "expiry": 1604223565542
     },
     "/usr/sbin/python.v3": {
       "data": {
@@ -205,7 +205,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857668
+      "expiry": 1604223565543
     },
     "/bin/python3.8.v3": {
       "data": {
@@ -230,7 +230,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857669
+      "expiry": 1604223565545
     },
     "/bin/python3.v3": {
       "data": {
@@ -255,7 +255,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857670
+      "expiry": 1604223565546
     },
     "/bin/python2.7.v3": {
       "data": {
@@ -280,7 +280,7 @@
         "sysPrefix": "/usr",
         "fileHash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c"
       },
-      "expiry": 1604073857670
+      "expiry": 1604223565547
     },
     "/bin/python2.v3": {
       "data": {
@@ -305,7 +305,7 @@
         "sysPrefix": "/usr",
         "fileHash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c"
       },
-      "expiry": 1604073857671
+      "expiry": 1604223565549
     },
     "/bin/python.v3": {
       "data": {
@@ -330,7 +330,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857671
+      "expiry": 1604223565550
     },
     "/usr/bin/python3.8.v3": {
       "data": {
@@ -355,7 +355,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857676
+      "expiry": 1604223565559
     },
     "/usr/bin/python3.v3": {
       "data": {
@@ -380,7 +380,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857677
+      "expiry": 1604223565560
     },
     "/usr/bin/python2.7.v3": {
       "data": {
@@ -405,7 +405,7 @@
         "sysPrefix": "/usr",
         "fileHash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c"
       },
-      "expiry": 1604073857678
+      "expiry": 1604223565562
     },
     "/usr/bin/python2.v3": {
       "data": {
@@ -430,7 +430,7 @@
         "sysPrefix": "/usr",
         "fileHash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c"
       },
-      "expiry": 1604073857676
+      "expiry": 1604223565564
     },
     "/usr/bin/python.v3": {
       "data": {
@@ -455,7 +455,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857679
+      "expiry": 1604223565563
     },
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
@@ -621,7 +621,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857754
+      "expiry": 1604223565619
     },
     "/sbin/python3.8.v3": {
       "data": {
@@ -646,7 +646,7 @@
         "sysPrefix": "/usr",
         "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692"
       },
-      "expiry": 1604073857755
+      "expiry": 1604223565618
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
       {
@@ -1231,7 +1231,7 @@
         "displayName": "Python 3.8.6 64-bit",
         "hash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692-5572e609a0df2a4aa0c0965ae0094e2a"
       },
-      "expiry": 1604073857920
+      "expiry": 1604223565638
     },
     "/usr/bin/python2.interpreter.displayName.v7": {
       "data": {
@@ -1332,11 +1332,12 @@
           "sysPrefix": "/usr",
           "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692",
           "type": "Unknown",
+          "cachedEntry": true,
           "displayName": "Python 3.8.6 64-bit",
           "__store": true
         }
       },
-      "expiry": 1604073857898
+      "expiry": 1604223565626
     },
     "/usr/bin/python2.interpreter.Details.v7": {
       "data": {

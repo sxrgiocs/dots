@@ -4,8 +4,8 @@ color pablo-mod
 "#                       S O U R C E  F I L E S                         #
 "########################################################################
 
-source ~/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/plug-config/coc.vim
+source /home/sergio/.config/nvim/vim-plug/plugins.vim
+source /home/sergio/.config/nvim/plug-config/coc.vim
 
 "########################################################################
 "#                             R E M A P S                              #
@@ -39,6 +39,23 @@ noremap <Leader>mp :StartMdPreview<CR>
 
 " Compile RMarkdown
 autocmd Filetype rmd map <leader>= :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+
+imap <c-t> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+let g:table_mode_corner='|'
+
+function! s:isAtStartOfLine(mapping)
+    let text_before_cursor = getline('.')[0 : col('.')-1]
+    let mapping_pattern = '\V' . escape(a:mapping, '\')
+    let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
+endfunction
+
+inoreabbrev <expr> <bar><bar>
+        \ <SID>isAtStartOfLine('\|\|') ?
+        \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
+inoreabbrev <expr> __
+         \ <SID>isAtStartOfLine('__') ?
+         \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
 "#######################################################################
 "#                       S E T S  &  L E T S                           #
