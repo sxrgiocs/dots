@@ -1,12 +1,14 @@
 
+<!---
 ██╗  ██╗ ██████╗ ██╗    ██╗    ████████╗ ██████╗     ██╗   ██╗██╗███╗   ███╗
 ██║  ██║██╔═══██╗██║    ██║    ╚══██╔══╝██╔═══██╗    ██║   ██║██║████╗ ████║
 ███████║██║   ██║██║ █╗ ██║       ██║   ██║   ██║    ██║   ██║██║██╔████╔██║
 ██╔══██║██║   ██║██║███╗██║       ██║   ██║   ██║    ╚██╗ ██╔╝██║██║╚██╔╝██║
 ██║  ██║╚██████╔╝╚███╔███╔╝       ██║   ╚██████╔╝     ╚████╔╝ ██║██║ ╚═╝ ██║
 ╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝        ╚═╝    ╚═════╝       ╚═══╝  ╚═╝╚═╝     ╚═╝
+-->
 
-# Moving:
+# Moving
 
 * Move around the file: **hjkl**
 
@@ -21,16 +23,54 @@
 
 # Typing
 
-* Enter insert mode in the line below: **o** 
+* Enter insert mode before the letter where the cursor is placed: **i**
 
-* Shift line down and enter insert mode up: **Shift + o** (O)
+* Enter insert mode after the letter where the cursor is placed: **a**
 
-* Enter insert mode at the end of the line: **Shift + a** (A)
+* Enter insert mode in the line below: **o**
 
-* Enter insert mode at the beginning of the line: **Shift + i** (I)
+* Shift line down and enter insert mode up: **O**
 
-* Put all the selected letters/words/sentences in caps: ** Shift + u** (U)
+* Enter insert mode at the end of the line: **A**
 
-* Delete entire word and enter insert mode: **c + w**
+* Enter insert mode at the beginning of the line: **I**
 
-* Select everything inside parenthesis, brackets, etc...: ** v + i + \$element**
+* Put all the selected letters/words/sentences in caps: **U**
+
+* Delete entire word and enter insert mode: **cw**
+
+* Select everything inside parenthesis, brackets, etc...: **vi + \$element**
+
+* Select everything outside parenthesis, brackets, etc...: **va + \$element**
+
+* Delete everything inside parenthesis, brackets, etc...: **di + \$element**
+
+* Delete everything inside parenthesis... and enter insert mode: **ca + \$element**
+
+* Set a mark: **m + G**
+
+# Editing
+
+* Select letter by letter: **v**
+
+* Select entire lines: **V**
+
+* Jump to the closest number and increase it by one unit: **c-a**
+
+* Jump to the closest number and decrease it by one unit: **c-x**
+
+* Format text to fit the maximum column width (selected previously): **gq**
+
+# Commands
+
+* Save: **:w**
+
+* Quit/Exit: **:q**
+
+* Save and exit: **:wq**
+
+* Quit without saving: **:q!**
+
+* Set maximum column width: **:set tw=number**
+
+* Un-highlight: **:noh**
