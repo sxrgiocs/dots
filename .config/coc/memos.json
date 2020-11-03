@@ -572,8 +572,7 @@
       },
       "sysPrefix": "/usr",
       "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692",
-      "type": "Unknown",
-      "cachedEntry": true
+      "type": "Unknown"
     },
     "preferredGlobalPyInterpreter": {
       "architecture": 3,
@@ -1238,49 +1237,49 @@
         "displayName": "Python 2.7.18 64-bit",
         "hash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c-24e023975b2d91b745114e5442585a72"
       },
-      "expiry": 1604073857822
+      "expiry": 1604272152224
     },
     "/bin/python2.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.18 64-bit",
         "hash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c-40f75ae6de9a1c861690e116e6d84de2"
       },
-      "expiry": 1604073857825
+      "expiry": 1604272152228
     },
     "/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.8.6 64-bit",
         "hash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692-50da0ba0ab4ece6cb955bbf5bfdf6cb7"
       },
-      "expiry": 1604073857826
+      "expiry": 1604272152226
     },
     "/usr/sbin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.8.6 64-bit",
         "hash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692-df652c65d7775c49b656540ca709964c"
       },
-      "expiry": 1604073857828
+      "expiry": 1604272152230
     },
     "/usr/sbin/python2.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.18 64-bit",
         "hash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c-1366af0dfd457a85694fcfa688fc1849"
       },
-      "expiry": 1604073857830
+      "expiry": 1604272152232
     },
     "/sbin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.8.6 64-bit",
         "hash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692-5c63326b639d48d65796abfeeabd9959"
       },
-      "expiry": 1604073857832
+      "expiry": 1604272152234
     },
     "/sbin/python2.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.18 64-bit",
         "hash": "1630e4c20dbfdfb91734882d7b2d49a9f4fcfe1641547c395f9bbda2a6e6d750404b65a151f2a672e3a392d3070091f7fea79b22670aaa01022d34cf3680b32c-ad33c319caa7459cc6c8259807358f32"
       },
-      "expiry": 1604073857833
+      "expiry": 1604272152236
     },
     "InterpreterAutoSeletionRule-system": {
       "architecture": 3,
@@ -1304,7 +1303,6 @@
       "sysPrefix": "/usr",
       "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692",
       "type": "Unknown",
-      "cachedEntry": true,
       "displayName": "Python 3.8.6 64-bit"
     },
     "/usr/bin/python.interpreter.Details.v7": {
@@ -1332,12 +1330,10 @@
           "sysPrefix": "/usr",
           "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692",
           "type": "Unknown",
-          "cachedEntry": true,
-          "displayName": "Python 3.8.6 64-bit",
-          "__store": true
+          "displayName": "Python 3.8.6 64-bit"
         }
       },
-      "expiry": 1604223565626
+      "expiry": 1604272152250
     },
     "/usr/bin/python2.interpreter.Details.v7": {
       "data": {
@@ -1367,7 +1363,7 @@
           "displayName": "Python 2.7.18 64-bit"
         }
       },
-      "expiry": 1604073857868
+      "expiry": 1604272152255
     },
     "/bin/python2.interpreter.Details.v7": {
       "data": {
@@ -1397,7 +1393,7 @@
           "displayName": "Python 2.7.18 64-bit"
         }
       },
-      "expiry": 1604073857871
+      "expiry": 1604272152262
     },
     "/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1427,7 +1423,7 @@
           "displayName": "Python 3.8.6 64-bit"
         }
       },
-      "expiry": 1604073857874
+      "expiry": 1604272152259
     },
     "/usr/sbin/python.interpreter.Details.v7": {
       "data": {
@@ -1457,7 +1453,7 @@
           "displayName": "Python 3.8.6 64-bit"
         }
       },
-      "expiry": 1604073857877
+      "expiry": 1604272152265
     },
     "/usr/sbin/python2.interpreter.Details.v7": {
       "data": {
@@ -1487,7 +1483,7 @@
           "displayName": "Python 2.7.18 64-bit"
         }
       },
-      "expiry": 1604073857881
+      "expiry": 1604272152269
     },
     "/sbin/python.interpreter.Details.v7": {
       "data": {
@@ -1517,7 +1513,7 @@
           "displayName": "Python 3.8.6 64-bit"
         }
       },
-      "expiry": 1604073857884
+      "expiry": 1604272152272
     },
     "/sbin/python2.interpreter.Details.v7": {
       "data": {
@@ -1547,7 +1543,7 @@
           "displayName": "Python 2.7.18 64-bit"
         }
       },
-      "expiry": 1604073857888
+      "expiry": 1604272152275
     },
     "ProposeLSBanner": false,
     "InterpreterAutoSeletionRule-cachedInterpreters": {
@@ -1572,8 +1568,36 @@
       "sysPrefix": "/usr",
       "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692",
       "type": "Unknown",
-      "cachedEntry": true,
       "displayName": "Python 3.8.6 64-bit"
+    }
+  },
+  "coc-python|/home/sergio/.config/nvim": {
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_PipEnvService:7ab184e5ea235ecc95ae69f15480ae5b": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:7ab184e5ea235ecc95ae69f15480ae5b": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/sergio/.config/nvim": {
+      "architecture": 3,
+      "path": "/usr/bin/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.8.6-final",
+        "major": 3,
+        "minor": 8,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.8.6-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "37d85afc02ad2649db4b072542d2180c353ed601d29562c5cb3fa586b4bf83c71a443a900973d9918cf7b1e90b0900015147728b713c83608ba14b3735c23692",
+      "type": "Unknown"
     }
   }
 }

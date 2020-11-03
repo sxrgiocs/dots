@@ -38,7 +38,7 @@ white = #bfbfbf
 orange = #ffb86c
 lime = #a2ff73
 
-[bar/example]
+[bar/mainbar]
 monitor = ${env:MONITOR:DP-1}
 ;monitor = ${env:MONITOR:fallback-value} 
 width = 100%

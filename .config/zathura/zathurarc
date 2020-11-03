@@ -6,6 +6,6 @@ set recolor-keephue             "true"
 
 set recolor true
 set recolor-darkcolor "#ffffff" # this is white
-set recolor-lightcolor "#060F1A" #this is dark blue
+set recolor-lightcolor "#0b0c14" #this is dark blue
 
 set selection-clipboard clipboard

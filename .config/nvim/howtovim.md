@@ -78,14 +78,11 @@
 
 * Un-highlight: **:noh**
 
-* Comment selected lines:
-
-    1. Select lines with Visual
-    2. Use replace all: **:%s/^/\$comment_char/g**
+* Comment selected lines: **:%s/^/\$comment_char/g**
 
 * Comment selected lines using line numbers: **:1,3s/^/\$comment_char**
 
-* Uncomment using line numbers: :\ABs/^\$comment_char/
+* Uncomment using line numbers: **:\ABs/^\$comment_char/**
 
 * Close buffer: **:bw\$number**
 

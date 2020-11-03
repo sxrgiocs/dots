@@ -1,37 +1,44 @@
 [colors]
 
-black = #292745
-red = #ff4151
-green = #50fa7b
-yellow = #ffe680
-blue = #8591ff
+black = #22253d
+red = #ff4a69
+green = #42ff86
+yellow = #ffeb66
+blue = #7881ff
 magenta = #ff79c6
 cyan = #8be9fd
 white = #ffffff
-orange = #ffb86c
-lime = #a2ff73
-purple = #bd93f9
+orange = #ffbd52
+lime = #baff66
+purple = #ab70ff
 gray = #abc5db
 
-background = #060F1A
+background = #0b0c14
 foreground = #dfdfdf
 foreground-alt = #44475a
 
 
 [bar/mainbar]
 monitor = ${env:MONITOR:HDMI-1}
+
 background = ${colors.background}
 foreground = ${colors.foreground}
+
 font-0 = JetBrains Mono:size=9;3
 font-1 = Font Awesome 5 Free Solid:size=10;2
 font-2 = Font Awesome 5 Brands:size=10;2
 font-3 = Sans:size=5;3
+
 wm-restack = bspwm
 border-size = 5
 border-color = ${colors.background}
-height = 20
+height = 20s
+
 modules-left = bspwm s wtitle
-modules-right = spotify s filesystem memory temperature s backlight bat vol s network s date
+modules-right = spotify s filesystem memory temperature s backlight bat vol s network s date 
+
+tray-position = right
+tray-padding = 2
 
 [module/s]
 type = custom/text
@@ -121,7 +128,7 @@ time = "  %H:%M"
 format-prefix = 
 format-prefix-foreground = ${colors.background}
 format-foreground = ${colors.background}
-format-background = ${colors.magenta}
+format-background = ${colors.red}
 
 label = %time% %date%
 
@@ -196,11 +203,11 @@ click-left = playerctl play-pause spotify
 scroll-up = playerctl next spotify
 scroll-down = playerctl previous spotify
 
-label-background = ${colors.lime}
+label-background = ${colors.orange}
 label-foreground = ${colors.background}
 
 format-prefix = "  "
 
 format-prefix-foreground = ${colors.background}
-format-prefix-background = ${colors.lime}
+format-prefix-background = ${colors.orange}
 

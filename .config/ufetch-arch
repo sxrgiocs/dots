@@ -61,10 +61,10 @@ if [ $(echo $(whoami)) = 'root' ]; then
         lc="${reset}${bold}${red}"         # labels
         ic="${reset}${red}"                # info
 else
-        c0="${reset}${blue}"                # first color
-        lc="${reset}${bold}${blue}"         # labels
-        nc="${reset}${bold}${blue}"         # user and hostname
-        ic="${reset}"                       # info
+        c0="${black}${black}"                # first color
+        lc="${black}${bold}${black}"         # labels
+        nc="${black}${bold}${black}"         # user and hostname
+        ic="${black}"                       # info
 fi
 
 ## OUTPUT

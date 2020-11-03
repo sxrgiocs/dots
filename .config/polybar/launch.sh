@@ -35,3 +35,5 @@ for item in $(polybar --list-monitors); do
         MONITOR=$MONITOR polybar --reload $BAR_NAME &
     fi
 done
+
+killall xembedsniproxy

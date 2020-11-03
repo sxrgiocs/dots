@@ -42,6 +42,7 @@ autocmd Filetype rmd map <leader>= :!echo<space>"require(rmarkdown);<space>rende
 
 imap <c-t> <c-g>u<Esc>[s1z=`]a<c-g>u
 
+" Vim tablemode
 let g:table_mode_corner='|'
 
 function! s:isAtStartOfLine(mapping)
