@@ -14,8 +14,8 @@ purple = #ab70ff
 gray = #abc5db
 
 background = #0b0c14
-foreground = #dfdfdf
-foreground-alt = #44475a
+foreground = #383d63
+foreground-alt = #22253d
 
 
 [bar/mainbar]
@@ -64,7 +64,7 @@ label-focused-padding = 1
 
 label-occupied = %name%
 label-occupied-padding = 1
-label-occupied-foreground = ${colors.white}
+label-occupied-foreground = ${colors.gray}
 label-occupied-background = ${colors.black}
 label-urgent = %icon%!
 label-urgent-background = #ff5555

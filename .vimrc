@@ -38,18 +38,10 @@ noremap <Leader>l :LLPStartPreview<CR>
 noremap <Leader>mp :StartMdPreview<CR>
 
 " Compile RMarkdown
-autocmd Filetype rmd map <leader>= :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
-
-imap <c-t> <c-g>u<Esc>[s1z=`]a<c-g>u
+autocmd Filetype rmd map <leader>= :w <bar> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
 
 " Vim tablemode
 let g:table_mode_corner='|'
-
-function! s:isAtStartOfLine(mapping)
-    let text_before_cursor = getline('.')[0 : col('.')-1]
-    let mapping_pattern = '\V' . escape(a:mapping, '\')
-    let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
-endfunction
 
 inoreabbrev <expr> <bar><bar>
         \ <SID>isAtStartOfLine('\|\|') ?
@@ -58,9 +50,21 @@ inoreabbrev <expr> __
          \ <SID>isAtStartOfLine('__') ?
          \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
+"NERDTree
+map <Leader>t :NERDTreeFind<CR>
+
+" Resize splits
+map <Leader>L :vertical resize -5<CR>
+map <Leader>H :vertical resize +5<CR>
+
+map <Leader>J :res -5<CR>
+map <Leader>K :res +5<CR>
+
 "#######################################################################
 "#                       S E T S  &  L E T S                           #
 "#######################################################################
+
+set fillchars+=vert:\ 
 
 " Set spelling check
 autocmd BufRead,BufNewFile *.md setlocal spell

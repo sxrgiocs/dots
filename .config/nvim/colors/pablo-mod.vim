@@ -27,3 +27,4 @@ highlight Search				ctermbg=3							guibg=#c0c000
 
 highlight Pmenu      ctermfg=7  ctermbg=0
 highlight PmenuSel   ctermfg=5  ctermbg=8
+highlight VertSplit  ctermbg=0  ctermfg=0
