@@ -1,14 +1,12 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 setopt autocd
 
 #Fix the Java problem
 export _JAVA_AWT_WM_NONPARENTING=1
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/bin/python
 PYTHONPATH=/usr/lib/python38.zip:/usr/lib/python3.8:/usr/lib/python3.8/lib-dynload:/home/sergio/.local/lib/python3.8/site-packages:/usr/lib/python3.8/site-packages
@@ -17,7 +15,7 @@ PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig:/home/sergio/Programs/Ip
 export VISUAL=nvim
 export EDITOR=nvim
 
-/home/sergio/.config/ufetch-arch
+#/home/sergio/.config/ufetch-arch
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -98,6 +96,7 @@ alias conn="notify-send 'Connected to:' '$(nmcli | awk '/^wlp2s0/ {print $4}')'"
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
 alias yaysua="yay -Sua --noconfirm"              # update only AUR pkgs
 alias yaysyu="yay -Syu --noconfirm"              # update standard pkgs and AUR pkgs
+alias yaysc='yay -Sc --noconfirm'
 alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
@@ -125,6 +124,7 @@ alias jn='jupyter notebook'
 alias media='ranger /run/media'
 alias conf='ranger /home/sergio/.config'
 alias uni='ranger /home/sergio/Documents/bioeng'
+
 # Git Configs
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
@@ -177,3 +177,4 @@ ex ()
 source /home/sergio/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/sergio/Programs/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

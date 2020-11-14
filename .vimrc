@@ -17,6 +17,8 @@ let mapleader = " "
 nnoremap <C-H> :bprev<CR>
 nnoremap <C-L> :bnext<CR>
 
+noremap <PageDown> <Nop>
+
 " Write and quit
 nnoremap <Leader>w :wq<CR>
 
@@ -72,6 +74,9 @@ autocmd BufRead,BufNewFile *.rmd setlocal spell
 autocmd BufRead,BufNewFile *.txt setlocal spell
 autocmd BufRead,BufNewFile *.tex setlocal spell
 
+set spelllang=en_us
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
 " Set linewidth for certain files
 autocmd BufRead,BufNewFile *.rmd setlocal textwidth=120
 autocmd BufRead,BufNewFile *.py setlocal textwidth=80
@@ -105,24 +110,22 @@ let g:languagetool_jar='/home/sergio/Programs/LanguageTool-5.1/languagetool-comm
 let g:languagetool_lang='en-US'
 
 " UltiSnips
-"let g:SuperTabDefaultCompletionType    = '<C-n>'
-"let g:SuperTabCrMapping                = 0
-"let g:UltiSnipsExpandTrigger           = '<tab>'
-"let g:UltiSnipsJumpForwardTrigger      = '<c-b>'
-"let g:UltiSnipsJumpBackwardTrigger     = '<c-z>'
-"let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
-"let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
-"let g:UltiSnipsSnippetDirectories = ['/home/sergio/.config/nvim/UltiSnips']
+let g:UltiSnipsExpandTrigger = '<nop>'
+let g:UltiSnipsJumpForwardTrigger = '<c-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<c-k>'
+let g:UltiSnipsRemoveSelectModeMappings = 0
 
-"let g:UltiSnipsEditSplit="vertical"
-"let g:UltiSnipsListSnippets="<c-t>"
+nnoremap <leader>es :UltiSnipsEdit!<cr>
 
 " VimTeX
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+
+" LaTeX Conceal
 set conceallevel=1
 let g:tex_conceal='abdmg'
+hi Conceal ctermbg=none
 
 "########################################################################
 "#                 B U F F E R  &  L I G H T L I N E                    #

@@ -24,10 +24,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
     " Latex 
     Plug 'xuhdev/vim-latex-live-preview' 
-    "Plug 'lervag/vimtex'
+    Plug 'lervag/vimtex'
+    Plug 'KeitaNakamura/tex-conceal.vim'
     " Ultisnips
-    "Plug 'SirVer/ultisnips' 
-    "Plug 'honza/vim-snippets'
+    Plug 'SirVer/ultisnips' 
+    Plug 'honza/vim-snippets'
     " Autocomplete
     Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
     " LanguageTool
@@ -43,4 +44,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 "    Plug 'vim-pandoc/vim-pandoc-syntax'
     " Tables
     Plug 'dhruvasagar/vim-table-mode'
+    " Fuzzy finder
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     call plug#end()
