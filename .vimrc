@@ -80,6 +80,7 @@ inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 " Set linewidth for certain files
 autocmd BufRead,BufNewFile *.rmd setlocal textwidth=120
 autocmd BufRead,BufNewFile *.py setlocal textwidth=80
+autocmd BufRead,BufNewFile *.tex setlocal textwidth=120
 
 " Give access to clipboard
 set clipboard=unnamedplus
