@@ -36,7 +36,7 @@ noremap <Leader>Y "+y
 "noremap <Leader>P "+p
 
 " Live LaTeX and Markdown Preview
-noremap <Leader>l :LLPStartPreview<CR>
+noremap <Leader>l :StartLatexPreview<CR>
 noremap <Leader>mp :StartMdPreview<CR>
 
 " Compile RMarkdown
@@ -103,9 +103,9 @@ set incsearch
 set encoding=UTF-8
 
 " PDF previews
-let g:livepreview_previewer = 'zathura'
+let g:latex_pdf_viewer = 'zathura'
 let g:md_pdf_viewer='zathura'
-
+let g:latex_engine='pdflatex'
 " LanguageTools
 let g:languagetool_jar='/home/sergio/Programs/LanguageTool-5.1/languagetool-commandline.jar'
 let g:languagetool_lang='en-US'
@@ -124,7 +124,7 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 
 " LaTeX Conceal
-set conceallevel=1
+set conceallevel=2
 let g:tex_conceal='abdmg'
 hi Conceal ctermbg=none
 

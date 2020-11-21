@@ -6,15 +6,15 @@ sxhkd &
 #                            M O N I T O R S                           #
 ########################################################################
 
-xrandr --output HDMI-1 --primary --left-of eDP-1 --size 1920x1080 &
+xrandr --output HDMI-1 --noprimary --right-of eDP-1 --size 1920x1080 &
 
 bspc subscribe monitor | while read -r line; do
   case $line in
       monitor_add*|monitor_geometry*)
 	if [[ "$(xrandr | grep -w "HDMI-1 connected")" == *"HDMI-1 connected"* ]] 
 	then          
-		bspc monitor HDMI-1 -d " 1" " 2" " 3" " 4" " 5" " 6" " 7"
-       	bspc monitor eDP-1 -d " 8" " 9" " 0"
+       	bspc monitor eDP-1 -d " 1" " 2" " 3"
+		bspc monitor HDMI-1 -d " 4" " 5" " 6" " 7" " 8" " 9" " 0"
         
 	elif [[ "$(xrandr | grep -w "DP-1 connected"  )" == *"DP-1 connected"* ]] 
         then
@@ -43,7 +43,7 @@ done &
 
 
 bspc config border_width         2
-bspc config window_gap           5
+bspc config window_gap           3
 #bspc config top_padding          27
 
 bspc config normal_border_color "#44475a"
@@ -68,6 +68,6 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Zathura state=tiled
 
-bspc config pointer_modifier mod1
-bspc config pointer_action1 move
-bspc config pointer_action2 resize_corner
+bspc config pointer_modifier mod4 # mod4 = super key
+bspc config pointer_action1 move # super + left click
+bspc config pointer_action2 resize_corner # super + right click

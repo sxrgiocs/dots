@@ -13,6 +13,8 @@ lime = #baff66
 purple = #ab70ff
 gray = #abc5db
 
+transparent = #00
+
 background = #0b0914
 foreground = #383d63
 foreground-alt = #22253d
@@ -21,7 +23,7 @@ foreground-alt = #22253d
 [bar/mainbar]
 monitor = ${env:MONITOR:HDMI-1}
 
-background = ${colors.background}
+background = ${colors.transparent}
 foreground = ${colors.foreground}
 
 font-0 = JetBrains Mono:size=9;3
@@ -31,7 +33,7 @@ font-3 = Sans:size=5;3
 
 wm-restack = bspwm
 border-size = 5
-border-color = ${colors.background}
+;border-color = ${colors.background}
 height = 20s
 
 modules-left = bspwm s wtitle
@@ -43,13 +45,15 @@ tray-padding = 2
 [module/s]
 type = custom/text
 content = "%{T4}  %{T-}"
-content-background = ${colors.background}
+content-background = ${colors.transparent}
 
 [module/wtitle]
 type = internal/xwindow
-label = " | %title% "
-label-empty = " | Desktop "
+label = " %title% "
+label-empty = " Desktop "
 label-maxlen = 40
+label-background = ${colors.background}
+label-foreground = ${colors.gray}
 
 [module/bspwm]
 

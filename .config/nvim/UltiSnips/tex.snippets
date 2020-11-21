@@ -1,0 +1,128 @@
+snippet notes "University Notes" b
+\documentclass[a4paper, twoside]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{parskip}
+
+\setlength{\parskip}{7pt}
+
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\numberwithin{equation}{section}
+
+\makeatletter
+\renewcommand\tagform@[1]{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}}
+\makeatother
+
+\begin{document}
+
+	%------------------------------------------------------------------------------
+	% Title page
+	\begin{titlepage}
+		\vspace*{5cm}
+		\centering
+		{\scshape\Large Biomedical Engineering \par\vspace{1cm}}
+		\Huge\bf{${1:Title}}\par\vspace{1.5cm}
+		\Large{2020-2021}\par\vspace{0.5cm}
+		\Large {URJC}
+	\end{titlepage}
+	%------------------------------------------------------------------------------
+	
+	%------------------------------------------------------------------------------
+	% Table of contents
+	\clearpage
+	\tableofcontents
+	\clearpage
+	%------------------------------------------------------------------------------
+
+	$0
+
+\end{document}
+endsnippet
+
+snippet com "Add comment" b
+%------------------------------------------------------------------------------
+% $1
+$0
+%------------------------------------------------------------------------------
+endsnippet
+
+snippet section "" b
+\section{$1}$0
+endsnippet
+
+snippet subsection "" b
+\subsection{$1}$0
+endsnippet
+
+snippet subsubsection "" b 
+\subsubsection{$1}$0
+endsnippet
+
+snippet sss "" b 
+\subsubsubsection{$1}$0
+endsnippet
+
+snippet colbox "Tcolorbox box" b
+\begin{tcolorbox}[colback=$1, colframe=$1, sharp corners]
+	$0
+\end{tcolorbox}
+endsnippet
+
+snippet color "HTML color" b
+\definecolor{$1}{HTML}{$2}
+endsnippet
+
+snippet => "implies" Ai
+\implies
+endsnippet
+
+snippet =< "implied by" Ai
+\impliedby
+endsnippet
+
+snippet frac "Fraction" b
+\frac{${1:num}}{${2:denom}} $0
+endsnippet
+
+snippet dfrac "Display fraction" b 
+\dfrac{${1:num}}{${2:denom}} $0
+endsnippet
+
+snippet dertext "Text mode derivative" b 
+$\frac{d}{d${1:variable}}$0$ 
+endsnippet
+
+snippet derdisp "Display mode derivative" bA
+\dfrac{d}{d${1:Variable}}$0
+endsnippet
+
+snippet partext "Text mode partial derivative" bA
+$\frac{\partial}{\partial ${1:Variable}}$0$
+endsnippet
+
+snippet pardisp "Text mode partial derivative" bA
+\dfrac{\partial}{\partial ${1:Variable}}$0
+endsnippet
+
+snippet wrap "Insert Wrap Figure" b
+\begin{wrapfigure}[${1:Lines}]{r}{${2:Size}\textwidth}
+	\begin{center}
+	\raisebox{0pt}[\dimexpr\height-0.5\baselineskip\relax]{\includegraphics[width=${2:Size}\textwidth]{${3:path}}}
+	\end{center}
+\end{wrapfigure}
+endsnippet
+
+snippet vspace "Insert vertical space" bA 
+\vspace{${1:space}} 
+endsnippet
+
+snippet image "Add image" b
+\includegraphics[width=${1:size}\textwidth]{${2:image path}}
+endsnippet

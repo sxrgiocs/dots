@@ -23,8 +23,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Devicons
     Plug 'ryanoasis/vim-devicons'
     " Latex 
-    Plug 'xuhdev/vim-latex-live-preview' 
-    "Plug 'lervag/vimtex'
+    Plug 'conornewton/vim-latex-preview' 
+    Plug 'lervag/vimtex'
     Plug 'KeitaNakamura/tex-conceal.vim'
     " Ultisnips
     Plug 'SirVer/ultisnips' 
