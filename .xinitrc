@@ -38,7 +38,8 @@ export _JAVA_AWT_WM_NONPARENTING=1
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 sxhkd & 
-picom &
+picom --experimental-backends &
+#picom &
 nitrogen --restore
 
 exec bspwm

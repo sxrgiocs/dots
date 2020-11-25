@@ -15,7 +15,7 @@ gray = #abc5db
 
 transparent = #00
 
-background = #0b0914
+background = #070614
 foreground = #383d63
 foreground-alt = #22253d
 
@@ -23,7 +23,7 @@ foreground-alt = #22253d
 [bar/mainbar]
 monitor = ${env:MONITOR:HDMI-1}
 
-background = ${colors.transparent}
+background = ${colors.transparent} 
 foreground = ${colors.foreground}
 
 font-0 = JetBrains Mono:size=9;3
@@ -32,9 +32,9 @@ font-2 = Font Awesome 5 Brands:size=10;2
 font-3 = Sans:size=5;3
 
 wm-restack = bspwm
-border-size = 5
+border-size = 4
 ;border-color = ${colors.background}
-height = 20s
+height = 23
 
 modules-left = bspwm s wtitle
 modules-right = spotify s filesystem memory temperature s backlight bat vol s network s date 
@@ -51,15 +51,17 @@ content-background = ${colors.transparent}
 type = internal/xwindow
 label = " %title% "
 label-empty = " Desktop "
-label-maxlen = 40
-label-background = ${colors.background}
+label-maxlen = 50
+label-background = ${colors.black}
 label-foreground = ${colors.gray}
+label-empty-background = ${colors.black}
+label-empty-foreground = ${colors.gray}
 
 [module/bspwm]
 
 type = internal/bspwm
 
-label-separator = "%{T4}  %{T-}"
+;label-separator = "%{T4}  %{T-}"
 
 label-focused = %name%
 label-focused-background = ${colors.gray}
@@ -69,13 +71,14 @@ label-focused-padding = 1
 label-occupied = %name%
 label-occupied-padding = 1
 label-occupied-foreground = ${colors.gray}
-label-occupied-background = ${colors.black}
+label-occupied-background = ${colors.background}
 label-urgent = %icon%!
 label-urgent-background = #ff5555
 label-urgent-padding = 1
 
 label-empty = %name%
 label-empty-foreground = ${colors.black}
+label-empty-background = ${colors.background}
 label-empty-padding = 1
 
 ; Separator in between workspaces

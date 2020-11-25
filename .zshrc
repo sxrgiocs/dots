@@ -88,7 +88,7 @@ alias pipes.sh='export LC_ALL="en_US.UTF-8" && pipes.sh'
 # Backup config files
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
-alias confall='config add /home/sergio/Pictures/Wallpaper /home/sergio/.nanorc /home/sergio/.p10k.zsh /home/sergio/.vimrc /home/sergio/.xinitrc /home/sergio/.zshrc /home/sergio/.config/alacritty /home/sergio/.config/autorandr /home/sergio/.config/bspwm /home/sergio/.config/dunst /home/sergio/.config/gtk-2.0 /home/sergio/.config/gtk-3.0 /home/sergio/.config/nvim /home/sergio/.config/picom /home/sergio/.config/polybar /home/sergio/.config/ranger /home/sergio/.config/rofi /home/sergio/.config/spicetify /home/sergio/.config/sxhkd /home/sergio/.config/zathura /home/sergio/.config/firefoxcss.sh /home/sergio/.config/ufetch-arch /home/sergio/.config/coc'
+alias confall='config add /home/sergio/.config/nvim/autoload/plugged/lightline.vim/autoload/lightline/colorscheme/mine.vim /home/sergio/Pictures/Wallpaper /home/sergio/.nanorc /home/sergio/.p10k.zsh /home/sergio/.vimrc /home/sergio/.xinitrc /home/sergio/.zshrc /home/sergio/.config/alacritty /home/sergio/.config/autorandr /home/sergio/.config/bspwm /home/sergio/.config/dunst /home/sergio/.config/gtk-2.0 /home/sergio/.config/gtk-3.0 /home/sergio/.config/nvim /home/sergio/.config/picom /home/sergio/.config/polybar /home/sergio/.config/ranger /home/sergio/.config/rofi /home/sergio/.config/spicetify /home/sergio/.config/sxhkd /home/sergio/.config/zathura /home/sergio/.config/firefoxcss.sh /home/sergio/.config/ufetch-arch /home/sergio/.config/coc'
 
 alias conn="notify-send 'Connected to:' '$(nmcli | awk '/^wlp2s0/ {print $4}')'"
 
